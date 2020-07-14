@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: #dadada;
@@ -7,48 +12,46 @@ body {
 .container {
   margin: 20px auto;
   width: 90%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   background-color: #dadada;
   margin: 1% 0;
   padding: 5px 15px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
   padding-bottom: 20px;
+  width: 100%;
 }
 
 img {
-  width: 50%;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 h1 {
   font-size: 175%;
-  margin: 0;
   position: absolute;
   left: 7%;
   top: 10%;
-  width: 100%
 }
 
-@media screen and (min-width: 575px) { /*tablet*/
+@media only screen and (min-width: 575px) {
    div {
-    margin: 1%;
-    width: 48%;
-    float: inherit;
+    width: 50%;
+  }
+  .title {
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 1199px) { /*desktop*/
+@media only screen and (min-width: 1199px) {
    div {
-    margin: 1%;
-    width: 48%;
+    width: 25%;
   }
 }
